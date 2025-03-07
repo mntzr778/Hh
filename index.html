@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى حبيبتي</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ff3366, #990000);
+            color: white;
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hearts-container {
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .heart {
+            width: 50px;
+            animation: float 3s infinite alternate ease-in-out;
+        }
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-15px); }
+        }
+        .message-container {
+            margin-top: 200px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            font-size: 20px;
+            font-weight: bold;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- فيديو الخلفية -->
+    <video autoplay loop muted class="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <!-- تشغيل الأغنية تلقائيًا -->
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- القلوب المتحركة -->
+    <div class="hearts-container">
+        <img src="heart1.png" class="heart">
+        <img src="heart2.png" class="heart">
+        <img src="heart3.png" class="heart">
+    </div>
+
+    <!-- رسالة الحب -->
+    <div class="message-container">
+        <p>
+            إلى جميلتي وحبيبتي ووتيني، كل عام وأنتِ بخير، وكل عام وأنتِ لي وحدي.  
+            كل سنة وأنتِ معي، قد تضيع الكلمات مني، لكني ممتن لوجودك معي.  
+            رغم سوء معاملتي لكِ، رغم كل الأمور السيئة التي أفعلها، رغم إهمالي،  
+            لا أعرف كيف أجازيكِ، ولا أعرف كيف أقوم بسداد حبكِ لي،  
+            لكني سأكتفي بقول:  
+            <strong>أنا أحبكِ من أعماق قلبي.</strong>  
+            أو كما نقول: <strong>يا حنيني من صماصيم ودهاليس كلبي، أحبكِ ❤️</strong>  
+            وكل عام وأنتِ بألف خير، يا كل خيري.  
+            بعد كل شيء، سامحيني لأن الدنيا شاغلتني عنكِ،  
+            وسامحيني لأنني لا أستطيع الاحتفال بأجمل يوم في حياتكِ وبحياتي وأنا بجانبكِ.  
+            أحبكِ هووووواييية ❤️  
+            <br><br>
+            <strong>من Mno إلى Hno</strong>  
+        </p>
+    </div>
+</body>
+</html>
